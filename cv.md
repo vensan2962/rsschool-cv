@@ -8,7 +8,7 @@
 
 ### Contact information:
 
-**Phone:** +375 25 932-3630
+**Phone:** +375 25 932-3630  
 **E-mail:** lepretor@gmail.com  
 **Telegram:** @vensan2962  
 **GitHub:** @vensan2962
