@@ -1,5 +1,124 @@
 * {
-    /* margin: 0px; */
-    /* padding: 0px; */
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Sans-serif;
     box-sizing: border-box;
+}
+
+/* h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #191919; */
+    /* -webkit-font-smoothing: antialiased; */
+/* }
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #888;
+    padding: 5px 0;
+} */
+
+.upper-menu {
+    background: #181818;
+    /* color: #FFF; */
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow: hidden;
+    /* box-sizing: border-box; */
+}
+
+/* .temp nav-item a {
+    color: #dd6149;
+} */
+
+#toggle {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    left: -100%;
+    top: -100%;
+}
+
+#toggle+label { 
+    position: absolute;
+    cursor: pointer;
+    background: #26ae90;
+    width: 100px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 8px 10px;
+    color: #FFF;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center; 
+    /* -webkit-font-smoothing: antialiased; */
+    /* cursor: pointer; */
+    margin: 0px 50px; /* отступ кнопки от края экрана */
+    /* transition: all 500ms ease; скорость появления кнопки */
+}
+
+#toggle+label:after {
+    content: "Open"
+}
+
+.box {
+    transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    /* padding: 5em 3em; */
+    padding: 80px 50px;
+}
+
+#toggle:checked~.upper-menu {
+    top: 0;
+}
+
+#toggle:checked~.box {
+    margin-top: 100px;
+}
+
+#toggle:checked+label {
+    background: #dd6149;
+}
+
+#toggle:checked+label:after {
+    content: "Close"
+}
+
+.nav-item {
+    color: #dd6149;
+}
+
+.nav-list {
+    background-color: bisque;
+    list-style: none;
+    /* margin: 0 35px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 50px;
+  }
+
+  a:link {
+    color: red;
+  }
+
+  a:visited {
+    color: orchid;
+  }
+
+  a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: cadetblue;
 }

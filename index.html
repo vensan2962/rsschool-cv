@@ -2,54 +2,99 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png"> -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-  <!-- <link rel="manifest" href="./assets/img/favicon/site.webmanifest"> -->
-
-  <title>Maksim Lepretor - Junior Front-End Developer</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css" />
 </head>
 
 <body>
-  <main>
+  <input type="checkbox" name="toggle" id="toggle" />
+  <label for="toggle"></label>
 
-    <div class="name">Maksim Lepretor</div>
-    <div class="job">Junior Front-End Developer</div>
-
-    <ul class="contacts">
-      <li class="email">lepretor@gmail.com</li>
-      <li class="telegram">@vensan2962</li>
-      <li class="github">@vensan2962</li>
+  <header class="upper-menu">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#contacts" class="nav-link">Contacts</a>
+      </li>
+      <li class="nav-item">
+        <a href="#summary" class="nav-link">Summary</a>
+      </li>
+      <li class="nav-item">
+        <a href="#skills" class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#code" class="nav-link">Code example</a>
+      </li>
+      <li class="nav-item">
+        <a href="#courses" class="nav-link">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a href="#languages" class="nav-link">Languages</a>
+      </li>
     </ul>
+  </header>
 
-    <div class="summary">My main goal for the near future is to get the profession of a front-end developer. I
-      understand that in order to achieve this goal, I will have to work hard, so I'm ready for this challenge</div>
+  <main class="box">
+    <div class="container">
+      <section class="intro">
+        <h1 class=".section-title">Maksim Lepretor</h1>
+        <div class="job">Junior Front-End Developer</div>
+      </section>
+      <h2 class="section-title">Contacts</h2>
+      <ul class="contacts" id="contacts">
+        <li>lepretor@gmail.com</li>
+        <li>@vensan2962</li>
+        <li>@vensan2962</li>
+      </ul>
 
-    <ul class="skills">
-      <li class="html5-and-css3-basics">html5-and-css3-basics</li>
-      <li class="javascript-basics">javascript-basics</li>
-      <li class="git-github">git-github</li>
-      <li class="vscode">vscode</li>
-      <li class="adobe-photoshop-coreldraw">adobe-photoshop-coreldraw</li>
-      <li class="google-search">google-search</li>
-      <li class=""></li>
-    </ul>
+      <section class="summary" id="summary">
+        <h2 class="Summary">Summary</h2>
+        My main goal for the near future is to get the profession of a
+        front-end developer. I understand that in order to achieve this goal,
+        I will have to work hard, so I'm ready for this challenge
+      </section>
 
-    <div class="code-sample"><code><pre>console.log('Hello, World!');</pre></code></div>
+      <section class="skills" id="skills">
+        <h2>Skills and Proficiency</h2>
+        <ul>
+          <li>HTML5 and CSS3 Basics</li>
+          <li>JavaScript Basics</li>
+          <li>Git, GitHub</li>
+          <li>VS Code</li>
+          <li>Adobe Photoshop, CorelDRAW</li>
+          <li>Google Search</li>
+        </ul>
+        <!-- <ul>
+          <li class="html5-and-css3-basics">html5-and-css3-basics</li>
+          <li class="javascript-basics">javascript-basics</li>
+          <li class="git-github">git-github</li>
+          <li class="vscode">vscode</li>
+          <li class="adobe-photoshop-coreldraw">adobe-photoshop-coreldraw</li>
+          <li class="google-search">google-search</li>
+        </ul> -->
+      </section>
+      <section class="code-sample" id="code">
+        <h2>Code example</h2>
+        <div>
+          <code>console.log('Hello, World!');</code>
+        </div>
+      </section>
 
-    <div class="experience"></div>
+      <section class="education" id="courses">
+        <h2>Courses</h2>
+        RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+      </section>
 
-    <!-- переработать оформление -->
-    <div class="education">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</div>
-    <!-- /переработать оформление -->
-
-    <div class="english-language">B1</div>
-
+      <section class="languages" id="languages">
+        <h2>Languages</h2>
+        <div>
+          English - B1<br />
+          Russian - Native
+        </div>
+      </section>
+    </div>
   </main>
 </body>
 
