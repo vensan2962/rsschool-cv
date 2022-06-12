@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <title>Document</title>
-  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -14,50 +17,61 @@
   <label for="toggle"></label>
 
   <header class="upper-menu">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#contacts" class="nav-link">Contacts</a>
-      </li>
-      <li class="nav-item">
-        <a href="#summary" class="nav-link">Summary</a>
-      </li>
-      <li class="nav-item">
-        <a href="#skills" class="nav-link">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a href="#code" class="nav-link">Code example</a>
-      </li>
-      <li class="nav-item">
-        <a href="#courses" class="nav-link">Courses</a>
-      </li>
-      <li class="nav-item">
-        <a href="#languages" class="nav-link">Languages</a>
-      </li>
-    </ul>
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#contacts" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-item">.</li>
+        <li class="nav-item">
+          <a href="#summary" class="nav-link">Summary</a>
+        </li>
+        <li class="nav-item">.</li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">.</li>
+        <li class="nav-item">
+          <a href="#code" class="nav-link">Code example</a>
+        </li>
+        <li class="nav-item">.</li>
+        <li class="nav-item">
+          <a href="#courses" class="nav-link">Courses</a>
+        </li>
+        <li class="nav-item">.</li>
+        <li class="nav-item">
+          <a href="#languages" class="nav-link">Languages</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="box">
     <div class="container">
+
       <section class="intro">
-        <h1 class=".section-title">Maksim Lepretor</h1>
-        <div class="job">Junior Front-End Developer</div>
+        <h1>Maksim Lepretor</h1>
+        <p class="p2">Junior Front-End Developer</p>
       </section>
-      <h2 class="section-title">Contacts</h2>
-      <ul class="contacts" id="contacts">
-        <li>lepretor@gmail.com</li>
-        <li>@vensan2962</li>
-        <li>@vensan2962</li>
-      </ul>
+
+      <section class="contacts" id="contacts">
+        <h2 class="section">Contacts</h2>
+        <ul>
+          <li>lepretor@gmail.com</li>
+          <li>@vensan2962</li>
+          <li>@vensan2962</li>
+        </ul>
+      </section>
 
       <section class="summary" id="summary">
-        <h2 class="Summary">Summary</h2>
-        My main goal for the near future is to get the profession of a
+        <h2 class="section">Summary</h2>
+        <p>My main goal for the near future is to get the profession of a
         front-end developer. I understand that in order to achieve this goal,
-        I will have to work hard, so I'm ready for this challenge
+        I will have to work hard, so I'm ready for this challenge</p>
       </section>
 
       <section class="skills" id="skills">
-        <h2>Skills and Proficiency</h2>
+        <h2 class="section">Skills and Proficiency</h2>
         <ul>
           <li>HTML5 and CSS3 Basics</li>
           <li>JavaScript Basics</li>
@@ -75,26 +89,29 @@
           <li class="google-search">google-search</li>
         </ul> -->
       </section>
+
       <section class="code-sample" id="code">
-        <h2>Code example</h2>
-        <div>
+        <h2 class="section">Code example</h2>
+        <p>
           <code>console.log('Hello, World!');</code>
-        </div>
+        </p>
       </section>
 
-      <section class="education" id="courses">
-        <h2>Courses</h2>
-        RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+      <section class="courses" id="courses">
+        <h2 class="section">Courses</h2>
+        <p>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</p>
       </section>
 
       <section class="languages" id="languages">
-        <h2>Languages</h2>
-        <div>
+        <h2 class="section">Languages</h2>
+        <p>
           English - B1<br />
           Russian - Native
-        </div>
+        </p>
+
       </section>
     </div>
+
   </main>
 </body>
 
