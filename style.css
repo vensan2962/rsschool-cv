@@ -5,32 +5,25 @@
   box-sizing: border-box;
 }
 
-main {
-  display: flex;
-  /* если body, то не прилипает кнопка меню */
-  flex-direction: column;
-  justify-content: space-between;
-  /* min-height: 100vh; */ 
+html {
+  scroll-behavior: smooth;
 }
 
-.upper-menu {
-  background-color: #e14658;
-  /* color: #FFF; */
+.nav {
+  background-color: blue;
   position: absolute;
   top: -100px;
   left: 0;
-  width: 100%;
-  /* height: 100px; */
+  width: 80%;
   height: 50px;
-  padding: 10px 30px;
   transition: top 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   overflow: hidden;
-  /* box-sizing: border-box; */
 }
 
-/* .temp nav-item a {
-  color: #dd6149;
-} */
+.box {
+  padding: 40px 40px;
+  transition: margin 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
 
 #toggle {
   position: absolute;
@@ -46,29 +39,20 @@ main {
   background-color: #e14658;
   width: 100px;
   border-radius: 0px 0px 5px 5px;
-  padding: 8px 10px;
+  padding: 10px 10px;
   color: white;
   line-height: 20px;
   font-size: 14px;
   text-align: center;
-  /* -webkit-font-smoothing: antialiased; */
-  /* cursor: pointer; */
-  margin: 0px 50px;
   /* отступ кнопки от края экрана */
-  /* transition: all 500ms ease; скорость появления кнопки */
+  margin: 0px 40px;
 }
 
 #toggle+label:after {
   content: "Open"
 }
 
-.box {
-  transition: margin 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-  /* padding: 5em 3em; */
-  padding: 40px 50px;
-}
-
-#toggle:checked~.upper-menu {
+#toggle:checked~.nav {
   top: 0;
 }
 
@@ -87,108 +71,76 @@ main {
 .nav-list {
   background-color: #e14658;
   list-style: none;
-  /* margin: 0 35px; */
   display: flex;
   justify-content: flex-start;
   align-items: top;
-  margin-block-start: 0;
+  margin-block-start: 0px;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 0;
-}
-
-.nav-link {
-  font-size: 18px;
-  padding: 0 20px;
-  line-height: 30px;
+  padding-inline-start: 30px;
 }
 
 .nav-item {
   color: white;
+  font-size: 18px;
+  padding: 0 10px;
+  line-height: 50px;
 }
 
-.upper-menu a {
+.nav a {
   color: white;
   text-decoration: none;
 }
 
-
-/* 
-a:link {
-  color: white;
+.nav a:hover {
+  color:aqua;
 }
 
-a:visited {
-  color: orchid;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
 }
-
-a:hover {
-  color: aqua;
-}
-
-a:active {
-  color: cadetblue;
-} */
-
-/* .intro {
-  background-color: red;
-}
-
-.contacts {
-  background-color: green;
-}
-
-.skills {
-  background-color: blue;
-}
-
-.summary {
-  background-color: yellow;
-}
-
-.code-sample {
-  background-color: blueviolet;
-}
-
-.courses {
-  background-color: orange;
-}
-
-.languages {
-  background-color: #26ae90;
-} */
 
 section {
   color: black;
   /* font-family: Oswald; */
 }
 
-section>h1 {
+section h1 {
   font-family: Oswald;
   font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
+
 .p2 {
   font-family: Oswald;
   font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
+  margin-top: -13px;
   letter-spacing: 5px;
 }
-section>h2 {
+
+section h2 {
   font-family: Oswald;
-  font-style: oblique;
+  /* font-style: oblique; */
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 2px;
 }
 
-section>ul,
+section ul,
 div,
 p {
   list-style: none;
   /* color: red; */
+}
+
+footer {
+  background-color: cadetblue;
 }
